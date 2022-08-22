@@ -1,0 +1,23 @@
+print("welcome to the rolcaster")
+height=int(input('enter your height: '))
+bill=0
+if height > 120:
+  print("you can ride")
+  #ticket price is based on tier ages
+  age=int(input('enter your age: '))
+  if age<12:
+    bill=5
+    print('the ticket price is $5')
+  elif age<18:
+    bill=7
+    print("the ticket price is $7")
+  else:
+    bill=12
+    print("the ticket price is $12'")
+    
+  want_photo=input("do want photo taken? y or n: ")
+  if want_photo== "y":
+    bill+=3
+  print(f"your total bill is {bill}")
+else:
+  print("you can't able to ride")
